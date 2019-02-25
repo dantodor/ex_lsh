@@ -29,6 +29,9 @@ defmodule ExLSH.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.18", only: :dev, runtime: false},
+      {:simhash, git: "https://github.com/UniversalAvenue/simhash-ex.git", branch: "master"},
+      {:benchee, "~> 0.14.0"},
+      {:spirit_fingers, "~> 0.2.0"},
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false}
     ]
   end
